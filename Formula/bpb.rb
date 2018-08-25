@@ -18,7 +18,7 @@ class Bpb < Formula
   end
 
   bottle do
-    root_url "https://github.com/indirect/homebrew-tap"
+    root_url "https://github.com/indirect/homebrew-tap/releases/download/bpb-v1.1.0/"
     cellar :any_skip_relocation
     sha256 "77e800d51b1f55317eb903c0472eca6b284f6ce4f3df166490f9e2cc4965d3e5" => :high_sierra
   end
