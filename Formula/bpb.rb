@@ -1,26 +1,21 @@
 class Bpb < Formula
   desc "boats' personal barricade"
   homepage "https://github.com/withoutboats/bpb"
-  url "https://github.com/withoutboats/bpb/archive/b1ef5ca1d2dea0e2ec0b1616f087f110ea17adfa.zip"
-  version "1.1.0"
-  sha256 "18fd7d11dca61d9bec49cbed963c484678e38f8b8886025cd0528ff3ad678564"
+  url "https://github.com/indirect/bpb/archive/de2b7be4eef4342ff54bd9bc84de0c5363264480.zip"
+  version "1.2.0"
+  sha256 "d24cf6c09e7497e5b38d85b6d52d51be9209163e44ac253ada6a84d801db5326"
 
-  # Building this depends on Rust 2018, which is not yet available in Homebrew
-  # depends_on "rust" => :build
-  env :std
+  depends_on "rust" => :build
 
   def install
-    cp_r "/Users/andre/.rustup", ENV["HOME"]
-    mkdir "#{ENV['HOME']}/.cargo"
-    cp_r "/Users/andre/.cargo/registry", "#{ENV['HOME']}/.cargo"
-    system "rustup", "default", "nightly"
     system "cargo", "install", "--path", ".", "--root", prefix
   end
 
   bottle do
-    root_url "https://github.com/indirect/homebrew-tap/releases/download/bpb-v1.1.0/"
+    root_url "https://github.com/indirect/homebrew-tap/releases/download/bpb-v1.2.0"
     cellar :any_skip_relocation
-    sha256 "77e800d51b1f55317eb903c0472eca6b284f6ce4f3df166490f9e2cc4965d3e5" => :high_sierra
+    sha256 "7232cdecdf15817783ade2e1162e64d1937a3401fc6d799de733e348c451b509" => :big_sur
+    sha256 "f947366c4bb526a4c1d80d63dfca4b50ada8326279e738c47c375f1cc25d3bd8" => :arm64_big_sur
   end
 
   test do
