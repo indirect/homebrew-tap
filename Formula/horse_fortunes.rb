@@ -3,7 +3,7 @@ class HorseFortunes < Formula
   homepage "http://horsefortun.es"
   version "1.0.0"
   url "https://raw.githubusercontent.com/indirect/homebrew-tap/master/share/horse_ebooks"
-  sha256 "6d1d0f7876270b7d10c7676506823d21f48dff0da2569a3be70575e8299b5649"
+  sha256 "22cc4bf4a46194699cff7ce7ddfd936fece1ff769d83f1b34a072360a5f0c884"
 
   depends_on "fortune" => :build
 
