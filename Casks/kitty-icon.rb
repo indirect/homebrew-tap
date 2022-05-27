@@ -18,7 +18,6 @@ cask "kitty-icon" do
   end
 
   postflight do
-    puts "POSTFLIGHT"
     system_command "touch",
       args: ["#{appdir}/kitty.app"],
       sudo: false
