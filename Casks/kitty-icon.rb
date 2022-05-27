@@ -11,10 +11,10 @@ cask "kitty-icon" do
   binary "kitty.icns", target: "#{appdir}/kitty.app/Contents/Resources/kitty.icns"
 
   preflight do
-    system_command "mv", args: [
-      "#{appdir}/kitty.app/Contents/Resources/kitty.icns",
-      "#{appdir}/kitty.app/Contents/Resources/kitty.icns.bak"
-    ], sudo: false
+    icon = "#{appdir}/kitty.app/Contents/Resources/kitty.icns"
+    unless File.exist?("#{icon}.bak")
+      system_command "mv", args: [icon, "#{icon}.bak"], sudo: false
+    end
   end
 
   postflight do
