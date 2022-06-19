@@ -3,11 +3,11 @@ cask "kitty-icon" do
   sha256 "6f156e5a65d792d9a35f521f60a7dd8bedee55de479c417fa9cc2079515ace58"
   url "https://github.com/k0nserv/kitty-icon/raw/main/kitty.icns"
   name "kitty"
-  desc "A different indirectcon for Kitty"
+  desc "A different icon for Kitty"
   homepage "https://github.com/indirect/homebrew-tap/"
 
   depends_on cask: "kitty"
-  
+
   binary "kitty.icns", target: "#{appdir}/kitty.app/Contents/Resources/kitty.icns"
 
   preflight do
