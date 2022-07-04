@@ -1,9 +1,9 @@
 class Cronitor < Formula
   desc "cronitor CLI"
   homepage "https://cronitor.io"
-  url "https://cronitor.io/dl/cronitor-stable-darwin-amd64.zip"
+  url "https://cronitor.io/dl/darwin_amd64.tar.gz"
   version "stable"
-  sha256 "d75bca15aac0948c2caf71d4373f43aab2f0ecc294774ee02433a662ee4d09bd"
+  sha256 "040dc66a170b67ec5ee0c453e366f96709e80228aa63276cb99c55b18cf7b3d5"
 
   def install
     mkdir_p bin
