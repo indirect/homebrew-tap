@@ -3,9 +3,9 @@ cask 'font-sf-mono-nerd-font' do
   sha256 '8621fe412854db2846522c65619e635c8968f64b3341910b5286a95c46aac618'
 
   url "https://github.com/epk/SF-Mono-Nerd-Font/releases/download/v#{version}/SF-Mono-Nerd-Font.zip"
-  appcast 'https://github.com/epk/SF-Mono-Nerd-Font/releases.atom'
   name 'SF-Mono-Nerd-Font'
   homepage 'https://github.com/epk/SF-Mono-Nerd-Font'
+  livecheck
 
   font 'SF-Mono-Nerd-Font/SFMono Bold Italic Nerd Font Complete.otf'
   font 'SF-Mono-Nerd-Font/SFMono Bold Nerd Font Complete.otf'
