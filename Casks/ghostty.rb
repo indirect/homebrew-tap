@@ -17,4 +17,5 @@ cask "ghostty" do
   auto_updates true
 
   app "Ghostty.app"
+  binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
 end
