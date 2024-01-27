@@ -14,5 +14,7 @@ cask "ghostty" do
     ]]
   end
 
+  auto_updates true
+
   app "Ghostty.app"
 end
