@@ -9,9 +9,9 @@ class WeirdFortunes < Formula
 
   def install
     system "strfile", "weird_twitter"
-    mkdir_p "#{prefix}/share/games/fortunes"
-    mv "weird_twitter", "#{prefix}/share/games/fortunes"
-    mv "weird_twitter.dat", "#{prefix}/share/games/fortunes"
+    mkdir_p share/"games/fortunes"
+    mv "weird_twitter", share/"games/fortunes"
+    mv "weird_twitter.dat", share/"games/fortunes"
   end
 
   test do

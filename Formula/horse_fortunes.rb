@@ -9,12 +9,12 @@ class HorseFortunes < Formula
 
   def install
     system "strfile", "horse_ebooks"
-    mkdir_p "#{prefix}/share/games/horse_fortunes"
-    mv "horse_ebooks", "#{prefix}/share/games/horse_fortunes"
-    mv "horse_ebooks.dat", "#{prefix}/share/games/horse_fortunes"
+    mkdir_p share/"games/fortunes"
+    mv "horse_ebooks", share/"games/fortunes"
+    mv "horse_ebooks.dat", share/"games/fortunes"
   end
 
   test do
-    system "fortune #{prefix}/share/games/horse_fortunes"
+    system "fortune", share/"games/fortunes/horse_ebooks"
   end
 end
