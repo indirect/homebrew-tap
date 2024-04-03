@@ -3,11 +3,10 @@ class Cronitor < Formula
   homepage "https://cronitor.io"
   url "https://cronitor.io/dl/darwin_amd64.tar.gz"
   version "stable"
-  sha256 "040dc66a170b67ec5ee0c453e366f96709e80228aa63276cb99c55b18cf7b3d5"
+  sha256 "81a6b8a76c99f083078cf1e82e80e692a684a9c0d7ad176ce01bc9950a62cb89"
 
   def install
-    mkdir_p bin
-    cp "cronitor", bin
+    bin.install "cronitor"
   end
 
   test do
