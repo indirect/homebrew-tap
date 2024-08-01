@@ -1,7 +1,7 @@
 cask "ghostty" do
   version :latest
   sha256 :no_check
-  depends_on arch: :arm64, macos: ">= :monterey"
+  depends_on macos: ">= :monterey"
 
   desc "GPU-accelerated terminal emulator pushing modern features"
   homepage "https://github.com/mitchellh/ghostty"
