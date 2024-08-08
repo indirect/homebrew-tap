@@ -18,4 +18,12 @@ cask "ghostty" do
 
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
+
+  zap trash: [
+    "~/Library/Caches/com.mitchellh.ghostty",
+    "~/Library/HTTPStorages/com.mitchellh.ghostty",
+    "~/Library/Preferences/com.mitchellh.ghostty.plist",
+    "~/Library/Saved Application State/com.mitchellh.ghostty.savedState",
+    "~/Library/WebKit/com.mitchellh.ghostty",
+  ]
 end
