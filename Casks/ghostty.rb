@@ -18,6 +18,8 @@ cask "ghostty" do
 
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
+  binary "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish",
+         target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/ghostty.fish"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man1/ghostty.1"
   manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man5/ghostty.5"
 
