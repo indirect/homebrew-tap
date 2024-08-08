@@ -18,4 +18,20 @@ cask "ghostty" do
 
   app "Ghostty.app"
   binary "#{appdir}/Ghostty.app/Contents/MacOS/ghostty"
+  binary "#{appdir}/Ghostty.app/Contents/Resources/fish/vendor_completions.d/ghostty.fish",
+         target: "#{HOMEBREW_PREFIX}/share/fish/vendor_completions.d/ghostty.fish"
+  binary "#{appdir}/Ghostty.app/Contents/Resources/terminfo/67/ghostty",
+         target: "#{ENV.fetch("TERMINFO", "~/.terminfo")}/67/ghostty"
+  binary "#{appdir}/Ghostty.app/Contents/Resources/terminfo/78/xterm-ghostty",
+         target: "#{ENV.fetch("TERMINFO", "~/.terminfo")}/78/xterm-ghostty"
+  manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man1/ghostty.1"
+  manpage "#{appdir}/Ghostty.app/Contents/Resources/man/man5/ghostty.5"
+
+  zap trash: [
+    "~/Library/Caches/com.mitchellh.ghostty",
+    "~/Library/HTTPStorages/com.mitchellh.ghostty",
+    "~/Library/Preferences/com.mitchellh.ghostty.plist",
+    "~/Library/Saved Application State/com.mitchellh.ghostty.savedState",
+    "~/Library/WebKit/com.mitchellh.ghostty",
+  ]
 end
