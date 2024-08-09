@@ -3,6 +3,7 @@ cask "ghostty" do
   sha256 :no_check
   depends_on macos: ">= :monterey"
 
+  name "Ghostty"
   desc "GPU-accelerated terminal emulator pushing modern features"
   homepage "https://github.com/mitchellh/ghostty"
   url do
