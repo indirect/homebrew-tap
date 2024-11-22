@@ -7,6 +7,10 @@ cask "ghostty" do
   desc "GPU-accelerated terminal emulator pushing modern features"
   homepage "https://github.com/mitchellh/ghostty"
   url do
+    if GitHub::API.credentials.nil?
+      odie "No GitHub credentials available! Save some by running `gh auth login`."
+    end
+
     assets = GitHub.get_release("mitchellh", "ghostty", "tip").fetch("assets")
     latest = assets.find{|a| a["name"] == "ghostty-macos-universal.zip" }.fetch("url")
     [latest, header: [
