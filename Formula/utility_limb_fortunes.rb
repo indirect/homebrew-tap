@@ -3,7 +3,7 @@ class UtilityLimbFortunes < Formula
   homepage "https://github.com/indirect/homebrew-tap/"
   url "https://raw.githubusercontent.com/indirect/homebrew-tap/master/share/utility_limb"
   version "1.1.0"
-  sha256 "69beb762a7fbd966a7d94b3335126c4c0d5be42dc41dc3129f365694b469e4be"
+  sha256 "c3f3ac7f0c8274963a5fb3334986dca259c3a9dfd366196256d69ded570b8405"
 
   depends_on "fortune" => :build
 
