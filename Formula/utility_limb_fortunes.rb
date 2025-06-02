@@ -2,7 +2,7 @@ class UtilityLimbFortunes < Formula
   desc "fortunes from weird twitter"
   homepage "https://github.com/indirect/homebrew-tap/"
   url "https://raw.githubusercontent.com/indirect/homebrew-tap/master/share/utility_limb"
-  version "1.0.0"
+  version "1.1.0"
   sha256 "69beb762a7fbd966a7d94b3335126c4c0d5be42dc41dc3129f365694b469e4be"
 
   depends_on "fortune" => :build
