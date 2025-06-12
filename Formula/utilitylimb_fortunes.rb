@@ -1,4 +1,4 @@
-class UtilityLimbFortunes < Formula
+class UtilitylimbFortunes < Formula
   desc "fortunes from utilitylimb"
   homepage "https://github.com/indirect/homebrew-tap/"
   url "https://raw.githubusercontent.com/indirect/homebrew-tap/master/share/utilitylimb"
