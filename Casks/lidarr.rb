@@ -17,7 +17,5 @@ cask "lidarr" do
     `codesign --force --deep -s - /Applications/Lidarr.app`
   end
 
-  depends_on macos: ">= :high_sierra"
-
   app "Lidarr.app"
 end
